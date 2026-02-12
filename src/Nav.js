@@ -1,7 +1,7 @@
 function App() {
   return (
     <nav>
-        <div className="container navigation">            
+        <div className="container navigation">
             <img src="/little-lemon.svg" alt="Logo" />
             <ul className="nav-links">
                 <li><a className="text-link" href="/">About</a></li>
