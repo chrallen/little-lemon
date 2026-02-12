@@ -1,7 +1,7 @@
 function App() {
   return (
     <footer>
-        <div className="container navigation">
+        <div className="container footer-nav">
             <img src="/little-lemon-secondary.png" alt="Logo"/>
             <div className="footer-links">
                 <div>
@@ -16,12 +16,12 @@ function App() {
                 </div>
                 <div>
                     <h3>Contact</h3>
-                    <ul>
-                        <li>Little Lemon Restaurant</li>
-                        <li>123 Main St</li>
-                        <li>Chicago, IL 60657</li>
-                        <li>Phone: (312) 555-1234</li>
-                    </ul>
+                    <address className="contact-info">
+                        <p>Little Lemon Restaurant</p>
+                        <p>123 Main St</p>
+                        <p>Chicago, IL 60657</p>
+                        <p>Phone: (312) 555-1234</p>
+                    </address>
                 </div>
                 <div>
                     <h3>Social</h3>
