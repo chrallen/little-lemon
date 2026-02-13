@@ -1,9 +1,19 @@
-function App() {
+import './Footer.css';
+
+function Footer() {
   return (
     <footer>
         <div className="container footer-nav">
-            <img src="/little-lemon-secondary.png" alt="Logo"/>
+            <img src='/little-lemon-secondary.svg' alt="Logo"/>
             <div className="footer-links">
+                <div>
+                    <h3>Little Lemon Chicago</h3>
+                    <address className="contact-info">
+                        <p>123 Main St</p>
+                        <p>Chicago, IL 60657</p>
+                        <p>Phone: (312) 555-1234</p>
+                    </address>
+                </div>
                 <div>
                     <h3>Navigation</h3>
                     <ul>
@@ -13,15 +23,6 @@ function App() {
                         <li><a href="/">Order</a></li>
                         <li><a href="/">Login</a></li>
                     </ul>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <address className="contact-info">
-                        <p>Little Lemon Restaurant</p>
-                        <p>123 Main St</p>
-                        <p>Chicago, IL 60657</p>
-                        <p>Phone: (312) 555-1234</p>
-                    </address>
                 </div>
                 <div>
                     <h3>Social</h3>
@@ -37,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default Footer;

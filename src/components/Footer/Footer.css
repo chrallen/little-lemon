@@ -1,0 +1,43 @@
+footer {
+    background-color: #edefee;
+}
+
+footer img {
+    height: auto;
+    max-width: 128px;
+}
+
+.footer-nav {
+    display: grid;
+    gap: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.footer-links {
+    display: grid;
+    gap: 2rem;
+}
+
+.footer-links > div {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.contact-info {
+    font-style: normal;
+}
+
+@media (min-width: 768px) {
+    .footer-nav {
+        grid-template-columns: 128px 1fr;align-items: start;
+  }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: start;
+        justify-content: end;
+        gap: 5rem;
+  }
+}
