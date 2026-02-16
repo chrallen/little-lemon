@@ -1,0 +1,19 @@
+nav {
+  height: 88px;
+}
+
+nav img {
+  width: 250px;
+}
+
+.navigation {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
