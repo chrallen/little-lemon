@@ -53,25 +53,3 @@ h2 {
   margin-right: auto;
   padding: 0 1.5rem;
 }
-
-/***** Navigation *****/
-
-nav {
-  height: 88px;
-}
-
-nav img {
-  width: 250px;
-}
-
-.navigation {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-}
