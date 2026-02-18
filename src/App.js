@@ -5,14 +5,14 @@ import Nav from './components/Nav/Nav.js'
 import Main from './Main.js'
 
 function App() {
-  return (
-    <>
-      <Header className="App" />
-      <Nav />
-      <Main />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header className="App" />
+			<Nav />
+			<Main />
+			<Footer />
+		</>
+	);
 }
 
 export default App;

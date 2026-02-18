@@ -25,7 +25,6 @@ p {
 }
 
 .primary-button {
-  display: inline-block;
   background-color: #F4CE14;
   color: #333;
   padding: 0.8rem 1.6rem;
