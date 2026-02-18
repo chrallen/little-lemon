@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 p {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -24,14 +29,19 @@ p {
   color: #495e57;
 }
 
-.primary-button {
-  background-color: #F4CE14;
+.primary-btn {
+  background-color: #f4ce14;
   color: #333;
   padding: 0.8rem 1.6rem;
   margin-top: 16px;
   text-decoration: none;
   border: none;
   border-radius: 16px;
+}
+
+.primary-btn:hover {
+  background: #E5C213;
+  transition: .1s ease-in;
 }
 
 h1 {
