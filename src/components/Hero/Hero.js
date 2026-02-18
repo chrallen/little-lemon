@@ -8,7 +8,7 @@ function Hero() {
             <h1 className="title">Little Lemon</h1>
             <h2 className="subtitle">Chicago</h2>
             <p>Nestled in the heart of bustling Chicago, Little Lemon is a family owned Mediterranean restaurant focused on traditional recipes with a modern twist. We invite you to experience our diverse, artisanal menu in a modern and accomodating space.</p>
-            <a className="primary-button" href="/">Reserve A Table</a>
+            <a className="primary-btn" href="/">Reserve A Table</a>
         </div>
         <img src="/mario-adrian-hero.png" alt="Two chefs in a kitchen" />
       </div>
