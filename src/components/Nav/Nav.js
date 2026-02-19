@@ -17,7 +17,7 @@ function App() {
 					<li><a className="text-link" href="/">Menu</a></li>
 					<li><a className="text-link" href="/">Reservations</a></li>
 					<li><a className="text-link" href="/">Order</a></li>
-					<li><a className="primary-button" href="/">Login</a></li>
+					<li><a className="primary-btn" href="/">Login</a></li>
 				</ul>
 			</div>
 		</nav>
