@@ -11,7 +11,7 @@ function SpecialCard({ image, title, price, description }) {
             <span className="price">{price}</span>
           </div>
           <p className="description">{description}</p>
-          <button className="primary-btn order-btn">Order Delivery</button>
+          <button className="alt-btn order-btn">Add To Order</button>
       </div>
     </article>
   );
