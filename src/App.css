@@ -11,13 +11,14 @@ ul {
 
 a {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
 }
 
 button {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 p {
@@ -42,6 +43,16 @@ p {
 .primary-btn:hover {
   background: #E5C213;
   transition: .1s ease-in;
+}
+
+.alt-btn {
+  border: none;
+  background: #fff;
+  color: #ee9972;
+  padding: 0.8rem 1.6rem;
+  margin-top: 16px;
+  text-decoration: none;
+  border-radius: 16px;
 }
 
 h1 {
