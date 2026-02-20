@@ -3,7 +3,7 @@ import './Nav.css';
 import Logo from '../../assets/images/little-lemon.svg';
 import MenuIcon from '../../assets/icons/menu.svg'
 
-function App() {
+function Nav() {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	useEffect (() => {
@@ -40,4 +40,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Nav;
