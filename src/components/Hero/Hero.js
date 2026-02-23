@@ -1,4 +1,5 @@
 import "./Hero.css"
+import dish from "../../assets/images/dish.jpg"
 
 function Hero() {
   return (
@@ -10,7 +11,7 @@ function Hero() {
             <p>Nestled in the heart of bustling Chicago, Little Lemon is a family owned Mediterranean restaurant focused on traditional recipes with a modern twist. We invite you to experience our diverse, artisanal menu in a modern and accomodating space.</p>
             <a className="primary-btn" href="/">Reserve A Table</a>
         </div>
-        <img src="/mario-adrian-hero.png" alt="Two chefs in a kitchen" />
+        <img src={dish} alt="people sharing food" />
       </div>
     </section>
   );
