@@ -22,13 +22,13 @@ function Reviews() {
     {
       name: "Anna K.",
       image: anna,
-      description: "Great flavors and friendly staff, but they were understaffed during my visit so my dish was not as warm as I would have preferred.",
+      description: "Great flavors and friendly staff, but they were understaffed during my visit so service had a lot to be desired.",
       rating: 3,
     },
     {
       name: "John J.",
       image: john,
-      description: "The Greek Salad was delicious and beautifully plated but some of the ingredients seemed to b",
+      description: "The Greek Salad was delicious and beautifully plated but I think it could have used a little more seasoning.",
       rating: 4,
     },
   ];
