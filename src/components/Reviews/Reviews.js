@@ -6,26 +6,30 @@ import anna from "../../assets/images/anna.png";
 import john from "../../assets/images/john.png"
 
 function Reviews() {
-  const specials = [
+  const reviews = [
     {
       name: "Warren S.",
       image: warren,
-      description: "The famous greek salad of crispy lettuce, peppers, olives, and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
+      description: "The lemon ricotta pancakes were light, fresh, and perfectly balanced. Absolutely delicious! Can't wait to try the other items on the menu.",
+      rating: 5,
     },
     {
       name: "Miriam R.",
       image: miriam,
-      description: "Our is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+      description: "From the cozy atmosphere to the flawless service, everything about our dinner felt special. I look forward to returning with my family.",
+      rating: 5,
     },
     {
       name: "Anna K.",
       image: anna,
-      description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+      description: "Great flavors and friendly staff, but they were understaffed during my visit so my dish was not as warm as I would have preferred.",
+      rating: 3,
     },
     {
       name: "John J.",
       image: john,
-      description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+      description: "The Greek Salad was delicious and beautifully plated but some of the ingredients seemed to b",
+      rating: 4,
     },
   ];
 
@@ -36,7 +40,7 @@ function Reviews() {
         <h2>What Customers Are Saying</h2>
 
         <div className="test-grid">
-          {specials.map((item) => (
+          {reviews.map((item) => (
             <ReviewCard key={item.title} {...item} />
           ))}
         </div>
