@@ -14,7 +14,6 @@
 }
 
 .review-card-header {
-  margin: .25rem 0;
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -30,11 +29,24 @@
 }
 
 .description {
-  margin: 1rem 0;
+  margin: .75rem 0;
   font-size: 1rem;
+}
+
+.star {
+  width: 20px;
+  margin-right: 2px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.4;
+}
+
+.star.filled {
+  filter: none;
+  opacity: 1;
 }
 
 .rating {
   width: 125px;
-  margin-top: .5rem;
+  margin-top: 1rem;
 }
