@@ -6,28 +6,27 @@
   flex-direction: column;
 }
 
-.review-card img {
-  width: 40px;
-  height: auto;
-}
-
-.card-content {
+.review-card-content {
   display: flex;
   flex-direction: column;
   padding: 1rem;
   flex: 1;
 }
 
-.card-header {
-  margin-top: .25rem;
+.review-card-header {
+  margin: .25rem 0;
   display: flex;
   align-items: center;
   gap: .5rem;
 }
 
-.card-header h3 {
+.review-card-header img {
+  width: 40px;
+  height: auto;
+}
+
+.review-card-header h3 {
   font-weight: 600;
-  margin-bottom: .25rem;
 }
 
 .description {
@@ -35,3 +34,7 @@
   font-size: 1rem;
 }
 
+.rating {
+  width: 125px;
+  margin-top: .5rem;
+}
