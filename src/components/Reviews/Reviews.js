@@ -34,7 +34,7 @@ function Reviews() {
   ];
 
   return (
-    <section className="testimonials">
+    <section className="reviews">
       <div className="container">
 
         <h2>What Customers Are Saying</h2>
