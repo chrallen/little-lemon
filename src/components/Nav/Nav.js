@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
 import './Nav.css';
 import Logo from '../../assets/images/little-lemon.svg';
 import MenuIcon from '../../assets/icons/menu.svg'
@@ -14,11 +15,13 @@ function Nav() {
 		<nav>
 			<div className="container navigation">
 
-				<img
-					src={Logo}
-					alt="Logo"
-					className='nav-logo'
-				/>
+				<Link to="/">
+					<img
+						src={Logo}
+						alt="Little Lemon Logo"
+						className='nav-logo'
+					/>
+				</Link>
 
 				<button
 					className='menu-toggle'
