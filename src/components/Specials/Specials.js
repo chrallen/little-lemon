@@ -4,7 +4,7 @@ import greekSalad from "../../assets/images/greek-salad.jpg";
 import bruschetta from "../../assets/images/bruschetta.jpg";
 import lemonDessert from "../../assets/images/lemon-dessert.jpg";
 
-function Specials() {
+const Specials = () => {
   const specials = [
     {
       title: "Greek Salad",
