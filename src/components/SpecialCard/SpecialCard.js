@@ -1,6 +1,6 @@
 import './SpecialCard.css'
 
-function SpecialCard({ image, title, price, description }) {
+const SpecialCard = ({ image, title, price, description }) => {
   return (
     <article className="special-card">
       <img src={image} alt={title} />
