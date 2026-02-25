@@ -4,7 +4,7 @@ import './Nav.css';
 import Logo from '../../assets/images/little-lemon.svg';
 import MenuIcon from '../../assets/icons/menu.svg'
 
-function Nav() {
+const Nav = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	useEffect (() => {
@@ -32,11 +32,11 @@ function Nav() {
 				</button>
 
 				<ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-					<li><a className="text-link" href="/">About</a></li>
-					<li><a className="text-link" href="/">Menu</a></li>
-					<li><a className="text-link" href="/">Reservations</a></li>
-					<li><a className="text-link" href="/">Order</a></li>
-					<li><a className="primary-btn" href="/">Login</a></li>
+					<li><Link to="AboutPage" className="text-link">About</Link></li>
+					<li><Link to="MenuPage" className="text-link">Menu</Link></li>
+					<li><Link to="ReservationPage" className="text-link">Reservations</Link></li>
+					<li><Link to="OrderPage" className="text-link">Order</Link></li>
+					<li><Link to="LoginPage" className="primary-btn">Login</Link></li>
 				</ul>
 			</div>
 		</nav>
