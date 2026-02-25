@@ -5,7 +5,7 @@ import miriam from "../../assets/images/miriam.png";
 import anna from "../../assets/images/anna.png";
 import john from "../../assets/images/john.png"
 
-function Reviews() {
+const Reviews = () => {
   const reviews = [
     {
       name: "Warren S.",
