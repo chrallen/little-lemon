@@ -3,9 +3,9 @@ import Specials from "./components/Specials/Specials";
 import Reviews from "./components/Reviews/Reviews";
 import About from "./components/About/About"
 
-function App() {
+const Main = () => {
   return (
-    <main className="App">
+    <main>
         <Hero />
         <Specials />
         <Reviews />
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
