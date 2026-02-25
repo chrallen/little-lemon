@@ -1,7 +1,7 @@
 .hero {
   background-color: #495e57;
   color: #edefee;
-  padding: 3rem 0;
+  overflow: visible;
 }
 
 .hero-content {
@@ -18,16 +18,7 @@
   max-width: 560px;
 }
 
-.title {
-  color: #F4CE14;
-  line-height: 1;
-}
-
-.subtitle {
-  line-height: 1.1;
-}
-
-.hero img {
+.section-media img {
   width: 100%;
   max-width: 504px;
   height: auto;
@@ -45,7 +36,7 @@
     gap: 4rem;
   }
 
-  .hero img {
-    flex-shrink: 0;           /* prevents squishing */
+  .hero .section-media img {
+    transform: translateY(5rem);
   }
 }

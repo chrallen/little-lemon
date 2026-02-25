@@ -1,7 +1,6 @@
 .about {
   background-color: #495e57;
   color: #edefee;
-  padding: 3rem 0;
   overflow: visible;
 }
 
@@ -18,21 +17,12 @@
   max-width: 560px;
 }
 
-.title {
-  color: #F4CE14;
-  line-height: 1;
-}
-
-.subtitle {
-  line-height: 1.1;
-}
+/* Image Stack */
 
 .about-images {
   position: relative;
-  width: 100%;
   max-width: 450px;
   height: 420px;
-  margin-right: 2rem;
 }
 
 .about-images img {
@@ -46,14 +36,14 @@
 
 .img-back {
   top: 0;
-  right: 150px;
+  right: 200px;
   transform: rotate(-6deg);
   z-index: 1;
 }
 
 .img-front {
   bottom: 0;
-  right: 0;
+  right: 50px;
   transform: rotate(6deg);
   z-index: 2;
 }
