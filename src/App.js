@@ -1,12 +1,13 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav/Nav.js'
-import HomePage from './pages/HomePage.js'
-import AboutPage from './pages/AboutPage.js'
-import MenuPage from './pages/MenuPage.js'
-import ReservationPage from './pages/ReservationPage.js';
-import OrderPage from './pages/OrderPage.js'
-import LoginPage from './pages/LoginPage.js'
+import Footer from './components/Footer/Footer'
+import HomePage from './pages/Home/HomePage.js'
+import AboutPage from './pages/About/AboutPage.js'
+import MenuPage from './pages/Menu/MenuPage.js'
+import ReservationPage from './pages/Reservations/ReservationPage.js';
+import OrderPage from './pages/Order/OrderPage.js'
+import LoginPage from './pages/Login/LoginPage.js'
 
 const App = () => {
 	return (
@@ -23,6 +24,7 @@ const App = () => {
 					<Route path='LoginPage' element={<LoginPage />} />
 				</Routes>
 
+				<Footer />
 			</BrowserRouter>
 		</>
 	);
