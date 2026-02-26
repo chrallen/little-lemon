@@ -10,24 +10,26 @@ import OrderPage from './pages/Order/OrderPage.js'
 import LoginPage from './pages/Login/LoginPage.js'
 
 const App = () => {
-	return (
-		<>
-			<BrowserRouter>
-				<Nav />
+  return (
+    <BrowserRouter>
+      <div className="app">
+        <Nav />
 
-				<Routes>
-					<Route path='/' element={<HomePage />} />
-					<Route path='AboutPage' element={<AboutPage />} />
-					<Route path='MenuPage' element={<MenuPage />} />
-					<Route path='ReservationPage' element={<ReservationPage />} />
-					<Route path='OrderPage' element={<OrderPage />} />
-					<Route path='LoginPage' element={<LoginPage />} />
-				</Routes>
+        <main className="main-content">
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/AboutPage' element={<AboutPage />} />
+            <Route path='/MenuPage' element={<MenuPage />} />
+            <Route path='/ReservationPage' element={<ReservationPage />} />
+            <Route path='/OrderPage' element={<OrderPage />} />
+            <Route path='/LoginPage' element={<LoginPage />} />
+          </Routes>
+        </main>
 
-				<Footer />
-			</BrowserRouter>
-		</>
-	);
-}
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
+};
 
 export default App;
