@@ -1,5 +1,11 @@
+import UnderConstruction from "../../components/UnderConstruction/UnderConstruction"
+
 const MenuPage = () => {
-  return <h1>This page is under construction</h1>
+  return (
+    <>
+      <UnderConstruction />
+    </>
+  )
 }
 
 export default MenuPage;

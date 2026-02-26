@@ -1,5 +1,11 @@
+import UnderConstruction from "../../components/UnderConstruction/UnderConstruction"
+
 const ReservationPage = () => {
-  return <h1>This page is under construction</h1>;
+  return (
+    <>
+      <UnderConstruction />
+    </>
+  )
 }
 
 export default ReservationPage;
