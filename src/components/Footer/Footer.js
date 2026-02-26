@@ -25,23 +25,24 @@ function Footer() {
 						</address>
 					</div>
 					<div>
-						<h3>Navigation</h3>
+						<h3>Social</h3>
 						<ul>
-						<li><a href="/">About</a></li>
-						<li><a href="/">Menu</a></li>
-						<li><a href="/">Reservations</a></li>
-						<li><a href="/">Order</a></li>
-						<li><a href="/">Login</a></li>
+							<li><a href="/">Facebook</a></li>
+							<li><a href="/">Instagram</a></li>
+							<li><a href="/">X</a></li>
 						</ul>
 					</div>
 					<div>
-						<h3>Social</h3>
+						<h3>Sitemap</h3>
 						<ul>
-						<li><a href="/">Facebook</a></li>
-						<li><a href="/">Instagram</a></li>
-						<li><a href="/">X</a></li>
+							<li><a href="/">About</a></li>
+							<li><a href="/">Menu</a></li>
+							<li><a href="/">Reservations</a></li>
+							<li><a href="/">Order</a></li>
+							<li><a href="/">Login</a></li>
 						</ul>
 					</div>
+
 				</div>
 
 			</div>

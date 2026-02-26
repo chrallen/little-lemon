@@ -3,7 +3,7 @@ footer {
 }
 
 .footer-logo {
-  width: 128px;
+  width: 96px;
   height: auto;
 }
 
@@ -21,6 +21,7 @@ footer {
 /* Mobile: everything stacked */
 .footer-content {
   display: grid;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
 
@@ -38,7 +39,7 @@ address {
 
   /* Outer grid: logo left, content right */
   .footer-nav {
-    grid-template-columns: 128px 1fr;
+    grid-template-columns: auto 1fr;
     align-items: start;
     column-gap: 5rem;
   }
@@ -48,5 +49,9 @@ address {
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     justify-content: end;
     column-gap: 4rem;
+  }
+
+  .footer-logo {
+    width: 128px;
   }
 }
