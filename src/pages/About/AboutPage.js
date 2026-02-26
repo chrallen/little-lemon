@@ -1,5 +1,11 @@
+import UnderConstruction from "../../components/UnderConstruction/UnderConstruction"
+
 const AboutPage = () => {
-  return <h1>This page is under construction</h1>
+  return (
+    <>
+      <UnderConstruction />
+    </>
+  )
 }
 
 export default AboutPage;
