@@ -41,7 +41,7 @@ const Nav = () => {
 					<li><Link to="/MenuPage" className="text-link">Menu</Link></li>
 					<li><Link to="/ReservationPage" className="text-link">Reservations</Link></li>
 					<li><Link to="/OrderPage" className="text-link">Order</Link></li>
-					<li><Link to="/LoginPage" className="primary-btn">Login</Link></li>
+					<li><Link to="/LoginPage" className="text-link">Login</Link></li>
 				</ul>
 			</div>
 		</nav>
