@@ -1,5 +1,6 @@
 import "./Hero.css"
 import dish from "../../assets/images/dish.jpg"
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
             <h1 className="title">Little Lemon</h1>
             <h2 className="subtitle">Chicago</h2>
             <p>Nestled in the heart of bustling Chicago, Little Lemon is a family owned Mediterranean restaurant focused on traditional recipes with a modern twist. We invite you to experience our diverse, artisanal menu in a modern and accomodating space.</p>
-            <a className="primary-btn" href="/">Reserve A Table</a>
+            <Link to="ReservationPage" className="primary-btn">Reserve A Table</Link>
         </div>
         <div className="section-media"><img src={dish} alt="people sharing food" /></div>
       </div>
