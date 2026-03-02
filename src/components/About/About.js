@@ -1,6 +1,7 @@
 import "./About.css"
 import chefs from "../../assets/images/marioAdrian.jpg"
 import restaurant from "../../assets/images/restaurant.jpg"
+import { Link } from 'react-router-dom'
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
         <div className="section-text">
             <h1 className="title">Our Story</h1>
             <p>At Little Lemon, chefs Mario and Adrian bring traditional Mediterranean recipes with a creative twist that stands out from the rest. Whether you're looking for a quick lunch or a leisurely dinner, Little Lemon Chicago is the perfect place to indulge in a delicious meal in a cozy and welcoming atmosphere.</p>
-            <a className="primary-btn" href="/">Reserve A Table</a>
+            <Link to="ReservationPage" className="primary-btn">Reserve A Table</Link>
         </div>
 
         <div className="section-media about-images">
