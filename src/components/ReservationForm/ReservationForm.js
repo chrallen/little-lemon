@@ -1,5 +1,5 @@
-import './ReservationForm.css'
-import { useState } from 'react'
+import './ReservationForm.css';
+import { useState } from 'react';
 
 const ReservationForm = ({ availableTimes, dispatch }) => {
 
