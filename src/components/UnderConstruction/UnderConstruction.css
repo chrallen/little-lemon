@@ -1,8 +1,4 @@
 .message {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #495e57;
 }
 
