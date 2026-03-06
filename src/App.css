@@ -43,6 +43,10 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 1.25rem;
+}
+
 p {
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -117,13 +121,14 @@ button {
 
 input,
 select {
-  height: 2.5rem;
+  height: 2.5em;
   padding-inline-start: .75em;
   padding-inline-end: .75em;
   border-radius: 8px;
   border: 1px solid;
   background-color: #fff;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: 'Karla', sans-serif;
 }
 
 /* Two Column Section Layout */
