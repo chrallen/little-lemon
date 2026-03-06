@@ -79,11 +79,9 @@ const ReservationForm = ({ availableTimes, dispatch }) => {
           </select>
         </div>
 
-        <input 
-          type="submit" 
-          value="Make Your Reservation" 
-          className='primary-btn'
-        />
+        <button type="submit" className='primary-btn'>
+          Reserve A Table
+        </button>
 
       </form>
     </section>
