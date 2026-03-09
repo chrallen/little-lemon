@@ -1,13 +1,18 @@
 import './ReservationForm.css';
 import { useState } from 'react';
 
-const ReservationForm = ({ availableTimes, dispatch }) => {
+const ReservationForm = ({ 
+  availableTimes, 
+  dispatch, 
+  submitForm, 
+  today, 
+}) => {
 
   const [formData, setFormData] = useState ({
-    date: "",
+    date: today,
     time: "",
-    guests: "",
-    occasion: "Birthday",
+    guests: "1",
+    occasion: "",
   });
 
   const handleChange = (e) => {
@@ -21,27 +26,36 @@ const ReservationForm = ({ availableTimes, dispatch }) => {
     if (id === "date") {
       dispatch({
         type: "UPDATE_TIMES",
-        payload: value,
+        date: value,
       });
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    submitForm(formData);
+  }
+
   return (
     <section>
-      <form className='reservation-form'>
+      <form 
+        onSubmit={handleSubmit}
+        className='reservation-form'
+      >
 
         <div>
-          <label htmlFor="res-date"><h3>Choose Date</h3></label>
+          <label htmlFor="date"><h3>Choose Date</h3></label>
           <input
             type="date"
             id="date"
             value={formData.date}
+            min={today}
             onChange={handleChange}
           />
         </div>
 
         <div>
-          <label htmlFor="res-time"><h3>Choose Time</h3></label>
+          <label htmlFor="time"><h3>Choose Time</h3></label>
           <select
             id="time"
             value={formData.time}
@@ -68,18 +82,22 @@ const ReservationForm = ({ availableTimes, dispatch }) => {
         </div>
 
         <div>
-          <label htmlFor="occasion"><h3>Occasion</h3></label>
+          <label htmlFor="occasion"><h3>Special Occasion?</h3></label>
           <select 
             id="occasion"
             value={formData.occasion}
             onChange={handleChange}
           >
+              <option>Make a selection</option>
               <option>Birthday</option>
               <option>Anniversary</option>
           </select>
         </div>
 
-        <button type="submit" className='primary-btn'>
+        <button 
+          type="submit" 
+          className='primary-btn'
+        >
           Reserve A Table
         </button>
 
