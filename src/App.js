@@ -8,6 +8,7 @@ import MenuPage from './pages/Menu/MenuPage.js';
 import ReservationPage from './pages/Reservations/ReservationPage.js';
 import OrderPage from './pages/Order/OrderPage.js';
 import LoginPage from './pages/Login/LoginPage.js';
+import ConfirmationPage from './pages/Confirmation/ConfirmationPage.js'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path='/ReservationPage' element={<ReservationPage />} />
             <Route path='/OrderPage' element={<OrderPage />} />
             <Route path='/LoginPage' element={<LoginPage />} />
+            <Route path='/ConfirmationPage' element={<ConfirmationPage />} />
           </Routes>
         </main>
 
