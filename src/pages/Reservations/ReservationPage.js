@@ -1,28 +1,36 @@
 import './ReservationPage.css';
 import ReservationForm from '../../components/ReservationForm/ReservationForm';
 import { useReducer } from 'react';
+import { fetchAPI, submitAPI } from '../../reservationAPI';
+import { useNavigate } from 'react-router-dom';
+
+const today = new Date().toISOString().split("T")[0];
 
 export const initializeTimes = () => {
-  return [
-    "5:00",
-    "6:00",
-    "7:00",
-    "8:00",
-    "9:00",
-  ];
+  return fetchAPI(new Date(today));
 };
 
-export const  updateTimes = (state, action) => {
-  switch (action.type) {
-    case "UPDATE_TIMES":
-      return initializeTimes();
-
-    default:
-      return state;
+export const updateTimes = (state, action) => {
+  if (action.type === "UPDATE_TIMES") {
+    const newTimes = fetchAPI(new Date(action.date));
+    return newTimes;
   }
+
+  return state;
 };
 
 const ReservationPage = () => {
+
+  const navigate = useNavigate();
+
+  const submitForm = formData => {
+    const success = submitAPI(formData);
+
+    if (success) {
+      navigate('/ConfirmationPage')
+    };
+  };
+
   const [availableTimes, dispatch] = useReducer(
     updateTimes,
     [],
@@ -36,6 +44,8 @@ const ReservationPage = () => {
           <ReservationForm
             availableTimes={availableTimes}
             dispatch={dispatch}
+            today={today}
+            submitForm={submitForm}
           />
         </div>
     </section>
