@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom';
 import './Nav.css';
 import Logo from '../../assets/images/little-lemon.svg';
-import MenuIcon from '../../assets/icons/menu.svg'
+import MenuIcon from '../../assets/icons/menu.svg';
 
 const Nav = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
