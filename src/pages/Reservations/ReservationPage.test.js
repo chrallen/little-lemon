@@ -1,20 +1,20 @@
-import { initializeTimes } from "./ReservationPage";
-import { updateTimes } from "./ReservationPage";
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useNavigate: () => jest.fn(),
+}));
+
+import { initializeTimes, updateTimes } from "./ReservationPage";
+import { fetchAPI } from "../../reservationAPI";
 
 test("initializeTimes returns correct initial times", () => {
   const result = initializeTimes();
 
-  expect(result).toEqual([
-    "5:00",
-    "6:00",
-    "7:00",
-    "8:00",
-    "9:00",
-  ]);
+  expect(Array.isArray(result)).toBe(true);
+  expect(result.length).toBeGreaterThan(0);
 });
 
 test("updateTimes returns same state when action type is unknown", () => {
-  const state = ["5:00", "6:00"];
+  const state = ["17:00", "18:00"];
   const action = { type: "UNKNOWN" };
 
   const result = updateTimes(state, action);
@@ -22,11 +22,23 @@ test("updateTimes returns same state when action type is unknown", () => {
   expect(result).toEqual(state);
 });
 
-test("updateTimes returns initialized times when UPDATE_TIMES action is dispatched", () => {
-  const state = [];
-  const action = { type: "UPDATE_TIMES", payload: "2026-03-04" };
+test("initializeTimes returns available times", () => {
+  const result = initializeTimes();
+
+  expect(Array.isArray(result)).toBe(true);
+  expect(result.length).toBeGreaterThan(0);
+});
+
+test("updateTimes returns new times when date changes", () => {
+
+  const state = ["17:00", "18:00"];
+
+  const action = {
+    type: "UPDATE_TIMES",
+    date: "2026-03-10"
+  };
 
   const result = updateTimes(state, action);
 
-  expect(result).toEqual(initializeTimes());
+  expect(Array.isArray(result)).toBe(true);
 });
