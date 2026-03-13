@@ -7,4 +7,5 @@ This project allows users to make reservations to the Little Lemon restaurant us
 - Explore the site's content, featured items, and testimonials.
 - Flip through the navigation, though most are standard "Under Construction" templates.
 - Make a reservation by interacting with the form on the Reservation page.
-- Marvel and the clean UI, that works across all screen sizes.
+- View the responsive UI by resizing your window.
+
