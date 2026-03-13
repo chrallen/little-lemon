@@ -4,7 +4,6 @@ jest.mock("react-router-dom", () => ({
 }));
 
 import { initializeTimes, updateTimes } from "./ReservationPage";
-import { fetchAPI } from "../../reservationAPI";
 
 test("initializeTimes returns correct initial times", () => {
   const result = initializeTimes();
